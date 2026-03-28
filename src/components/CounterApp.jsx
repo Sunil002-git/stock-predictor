@@ -15,7 +15,7 @@ const CounterApp = () => {
     <>
     <h1>Counter App</h1>
     <h2>Count : {count}</h2>
-    <button onClick={() => setCount(count + 1)}>Increase</button>
+    <button onClick={increaseCount}>Increase</button>
     <button onClick={resetCount}>Reset</button>
     <button onClick={decreaseCount}>Decrease</button>
     
