@@ -6,12 +6,13 @@ import LearnEvent from "./components/LearnEvent"
 import LearnShiftingStateUp from "./components/LearnShiftingStateUp"
 import CounterApp from "./components/CounterApp"
 import LearnUseEffect from "./components/LearnUseEffect"
+import LearnUseMemo from "./components/LearnUseMemo"
 function App() {
   
 // let price = 200
-  const getStock = (data) => {
-    console.log(data)
-  }
+  // const getStock = (data) => {
+  //   console.log(data)
+  // }
   return (
     <>
       <h1>Learn React</h1>
@@ -22,7 +23,8 @@ function App() {
       {/* <LearnEvent /> */}
       {/* <LearnShiftingStateUp getStock = {getStock} /> */}
       {/* <CounterApp /> */}
-      <LearnUseEffect />
+      {/* <LearnUseEffect /> */}
+      <LearnUseMemo />
     </>
   )
 }
