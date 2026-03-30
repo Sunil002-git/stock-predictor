@@ -7,12 +7,22 @@ import LearnShiftingStateUp from "./components/LearnShiftingStateUp"
 import CounterApp from "./components/CounterApp"
 import LearnUseEffect from "./components/LearnUseEffect"
 import LearnUseMemo from "./components/LearnUseMemo"
+import ChildA from "./components/ChildA"
+import { createContext, useState } from "react"
+import LearnUseRef from "./LearnUseRef"
+
+const StockContext = createContext()
+const UserContext = createContext()
+
 function App() {
   
 // let price = 200
   // const getStock = (data) => {
   //   console.log(data)
   // }
+  let price = 300
+  let stock = 'Tesla'
+  const [user, setUser] = useState({name: 'sunil', isLoggedIn: 'Yes'})
   return (
     <>
       <h1>Learn React</h1>
@@ -24,9 +34,17 @@ function App() {
       {/* <LearnShiftingStateUp getStock = {getStock} /> */}
       {/* <CounterApp /> */}
       {/* <LearnUseEffect /> */}
-      <LearnUseMemo />
+      {/* <LearnUseMemo /> */}
+      {/* <StockContext.Provider value={{ stock, price }}>
+        <UserContext.Provider value = {{user, setUser}}>
+          <ChildA />
+        </UserContext.Provider>
+      </StockContext.Provider> */}
+      <LearnUseRef />
     </>
   )
 }
 
+export {StockContext, UserContext}
 export default App
+
