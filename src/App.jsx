@@ -9,7 +9,11 @@ import LearnUseEffect from "./components/LearnUseEffect"
 import LearnUseMemo from "./components/LearnUseMemo"
 import ChildA from "./components/ChildA"
 import { createContext, useState } from "react"
-import LearnUseRef from "./LearnUseRef"
+import LearnUseRef from "./components/LearnUseRef"
+import LearnCustomHooks from "./components/LearnCustomHooks"
+import LearnConditionalRendering from "./components/LearnConditionalRendering"
+import LearnMap from "./components/LearnMap"
+import LearnForm from "./components/LearnForm"
 
 const StockContext = createContext()
 const UserContext = createContext()
@@ -40,7 +44,11 @@ function App() {
           <ChildA />
         </UserContext.Provider>
       </StockContext.Provider> */}
-      <LearnUseRef />
+      {/* <LearnUseRef /> */}
+      {/* <LearnCustomHooks /> */}
+      {/* <LearnConditionalRendering /> */}
+      {/* <LearnMap /> */}
+      <LearnForm />
     </>
   )
 }
